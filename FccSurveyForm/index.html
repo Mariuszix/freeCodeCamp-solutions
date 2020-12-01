@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body id="main">
+    <header id="header">
+        <h1 id="title">Marius's survey form</h1>
+        <p id="description">Please take a few minutes to help us improve our product</p>
+    </header>
+
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Please enter your name" required>
+
+        </div> 
+
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Please eneter your email" required >
+
+        </div> 
+
+        <div class="form-group">
+            <label id="number-label" for="Age">Age</label>
+            <input type="number" name="age" id="number" class="form-control" min="1" max="200" placeholder="Age" required >
+
+        </div> 
+
+        <div class="form-group">
+            <label id="gender-label" for="Gender">Gender</label>
+            <select name="gender" id="dropdown" class="form-control">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>      
+
+         <div class="form-group">
+             <p>Please choose your current diet:</p>
+             <input type="radio" id="Omnivor" name="diet" value="Omnivor">
+             <label for="Omnivor">Omnivor</label><br>
+             <input type="radio" id="Vegetarian" name="diet" value="Vegetarian">
+             <label for="Omnivor">Vegetarian</label><br>
+             <input type="radio" id="Vegan" name="diet" value="Vegan">
+             <label for="Omnivor">Vegan</label><br>
+             <input type="radio" id="Paleo" name="diet" value="Paleo">
+             <label for="Omnivor">Paleo</label><br>
+
+         </div>   
+
+
+         <div class="form-group">
+             <p>Check the boxes:</p>
+             <input type="checkbox" id="feeling1" name="feeling1" value="Happy">
+             <label for="feeling1">I am happy</label><br>
+             <input type="checkbox" id="feeling2" name="feeling2" value="Sad">
+             <label for="feeling2">I am sad</label><br>
+             <input type="checkbox" id="feeling3" name="feeling3" value="Chill">
+             <label for="feeling3">I am chill</label><br>
+         </div>
+
+         <div class="form-group">
+             <label for="Other things">Write bellow:</label><br>
+             <textarea id="other-text" name="other-text" rows="5" cols="25"></textarea>
+
+         </div>
+         
+         <div class="form-group">
+             <input type="submit" id="submit">
+
+
+         </div>
+
+
+        
+        
+        
+
+
+    </form>
+
+   
+
+    
+</body>
+</html>
